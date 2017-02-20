@@ -35,17 +35,8 @@ var deSub = map[rune]string{
 	'ß': "ss",
 }
 
-var enSub = map[rune]string{
-	'&': "and",
-	'@': "at",
-}
+var enSub = map[rune]string{}
 
-var plSub = map[rune]string{
-	'&': "i",
-	'@': "na",
-}
+var plSub = map[rune]string{}
 
-var esSub = map[rune]string{
-	'&': "y",
-	'@': "en",
-}
+var esSub = map[rune]string{}

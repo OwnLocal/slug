@@ -40,7 +40,7 @@ func TestSlugMake(t *testing.T) {
 		{"Æ", "ae"},
 		{"Ich heiße", "ich-heisse"},
 
-		{"This & that", "this-and-that"},
+		{"This & that", "this-that"},
 		{"fácil €", "facil-eu"},
 		{"smile ☺", "smile"},
 		{"Hellö Wörld хелло ворлд", "hello-world-khello-vorld"},
@@ -65,10 +65,10 @@ func TestSlugMakeLang(t *testing.T) {
 		in   string
 		want string
 	}{
-		{"en", "This & that", "this-and-that"},
+		{"en", "This & that", "this-that"},
 		{"de", "This & that", "this-that"},
-		{"pl", "This & that", "this-i-that"},
-		{"es", "This & that", "this-y-that"},
+		{"pl", "This & that", "this-that"},
+		{"es", "This & that", "this-that"},
 		{"test", "This & that", "this-that"}, // unknown lang, do no subs
 	}
 
