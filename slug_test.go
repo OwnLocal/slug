@@ -69,7 +69,7 @@ func TestSlugMakeLang(t *testing.T) {
 		{"de", "This & that", "this-und-that"},
 		{"pl", "This & that", "this-i-that"},
 		{"es", "This & that", "this-y-that"},
-		{"test", "This & that", "this-and-that"}, // unknown lang, fallback to "en"
+		{"test", "This & that", "this-that"}, // unknown lang, do no subs
 	}
 
 	for index, smlt := range testCases {

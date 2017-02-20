@@ -60,8 +60,7 @@ func MakeLang(s string, lang string) (slug string) {
 		slug = SubstituteRune(slug, plSub)
 	case "es":
 		slug = SubstituteRune(slug, esSub)
-	default: // fallback to "en" if lang not found
-		slug = SubstituteRune(slug, enSub)
+	default: // do none if lang not found
 	}
 
 	// Process all non ASCII symbols
