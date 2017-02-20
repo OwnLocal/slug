@@ -25,8 +25,14 @@ var defaultSub = map[rune]string{
 }
 
 var deSub = map[rune]string{
-	'&': "und",
-	'@': "an",
+	'ä': "ae",
+	'é': "e",
+	'ü': "ue",
+	'ö': "oe",
+	'Ä': "Ae",
+	'Ü': "Ue",
+	'Ö': "Oe",
+	'ß': "ss",
 }
 
 var enSub = map[rune]string{
